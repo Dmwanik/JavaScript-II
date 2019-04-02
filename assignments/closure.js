@@ -1,6 +1,11 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
-
+function sayWsup() {
+  let name = "Dennis";
+  function slang() {
+    // accessing myName outside this function using a closure
+    console.log("sayWsup" + name)
+  }
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
@@ -18,4 +23,5 @@ const counterFactory = () => {
   // Return an object that has two methods called `increment` and `decrement`.
   // `increment` should increment a counter variable in closure scope and return it.
   // `decrement` should decrement the counter variable and return it.
+}
 };
